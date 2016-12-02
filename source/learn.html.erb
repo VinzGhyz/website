@@ -58,14 +58,18 @@ responsive: true
 
   <h3>How do I future-proof my Ember.js application?</h3>
 
-  <p>When looking for guidance on whether to use a certain API, or follow a certain pattern in your application, you should look in order to: deprecations, guides, RFC. At the moment there are two main mechanisms for the Ember.js team to communicate what the future of the framework might look like, deprecations and RFCs. These two mechanisms are followed by documentation, which tries to showcase idiomatic Ember.js code.</p>
+  - safety of the herd
+  - very well trodden upgrade path
+  - stability without stagnation
+  - don't read the tea leaves / guess ahead / do hacks
+  - dashboard
 
-  <h4>Deprecations</h4>
+  <p>
+    Ember.js' strong emphasis on <a href="https://speakerdeck.com/wycats/stability-without-stagnation-lessons-learned-from-shipping-ember-dot-js">Stability without Stagnation</a> means that framework developers take great care when designing new functionality to make sure it fits with the existing functionalities, and provides a path forward for users to upgrade without being subjected to churn.
+  </p>
 
-  <p>The most vinculative one.</p>
-
-  <h4>RFCs</h4>
-
-  <p>Less vinculative than deprecations due to them not actually being the implementation. Aspirational document. Comes back to deprecations once actually implemented.</p>
+  <p>
+    To that effect, Ember.js' development follows a process that incorporates <a href="https://github.com/emberjs/rfcs">RFCs for features and deprecations</a> and a <a href="/builds">six-week "train release schedule"</a>. Every six weeks, candidate features are reviewed and either deemed ready to be included in the stable release, or carry on in beta for another cycle until the next release happens.
+  </p>
 </div>
 <% end %>
